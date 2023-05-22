@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body class="bg-success bg-opacity-10" id="body" style="background-color: ">
+  <!-- bg-info bg-opacity-10    DarkSlateGray -->
+  <div class="container-fluid bg-gradient d-flex flex-row-reverse" style="background-color: rgb(32, 63, 63)">
+    <button class="shadow btn btn-sm rounded-pill text-warning border-1 border-secondary py-0 my-auto" id="btn_toggle"
+      onclick="clcikmeth()" disabled> Dark/Light </button>
+    <div class="flex-grow-1">
+      <span class="badge fs-3 pt-1 d-block">Masum Khan </span>
+      <span class="d-block text-center badge mb-1 mt-0 pt-0" style="color: Tan">Full stack developer (MERN)</span>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-around mt-3 px-3 ">
+    <!--  -->
+    <div class="col-md-4 col-sm-6 rounded-3" id="div1">
+      <span class="px-1 rounded-pill float-end text-black shadow-sm">
+        <i class="fa-solid fa-info-circle me-1"></i>Profile </span>
+      <ul class="d-flex flex-column gap-2 flex-wrap list-unstyled ps-2 justify-content-center mt-1">
+        <!--  text-center  -->
+        <li class=" ">
+          <!-- <img height="100" width="95" class="rounded-circle"
+            src="https://media.licdn.com/dms/image/C5603AQGVhTn0cvkcRw/profile-displayphoto-shrink_800_800/0/1661930138028?e=1679529600&v=beta&t=JJq5jl6PAHQCYHBV1Z6z0DEExI4Teg5tgC_dgEUAH2Y"
+            alt="" /> -->
+          <!-- <img height="125" width="120" class="rounded-circle" src="./rsrc/mk.jpg" /> -->
+          <img height="125" width="120" class="rounded-circle"
+            src="https://media.licdn.com/dms/image/C5603AQGVhTn0cvkcRw/profile-displayphoto-shrink_800_800/0/1661930138028?e=1679529600&v=beta&t=JJq5jl6PAHQCYHBV1Z6z0DEExI4Teg5tgC_dgEUAH2Y" />
+        </li>
+        <li><i class="fas fa-mobile-alt me-1"></i> +880 1833-347848</li>
+        <li>
+          <i class="fa-solid fa-location-dot me-1"></i> Beanibazar, Sylhet
+        </li>
+        <li>
+          <i class="fa-solid fa-globe me-1"></i><a class="text-decoration-none" target="_blank"
+            href="https://masumk081.web.app">masumk081.web.app</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin me-1"></i>
+          <a class="text-decoration-none" href="https://www.linkedin.com/in/masumkhan"
+            target="_blank">linkedin.com/in/masumkhan</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-github me-1"></i>
+          <a class="text-decoration-none" href="https://github.com/masumkhan081" target="_blank">Repositories</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-facebook me-1"></i>
+          <a class="text-decoration-none" href="https://www.facebook.com/fanofnietzsche"
+            target="_blank">facebook.com/fanofnietzsche</a>
+        </li>
+        <li>
+          <span class=""><i class="fas fa-envelope me-1"></i>study.contents.of.masumkhan@gmail</span>
+        </li>
+        <li>
+          <span class="badge text-black text-start">Hobbies:</span>
+          <ul class="d-flex gap-3 list-unstyled">
+            <li>
+              <img src="./rsrc/fishing-2.png" height="40" class="rounded-circle bg-black bg-opacity-10" />
+            </li>
+            <li>
+              <img src="./rsrc/reading-5.png" height="40" class="rounded-circle bg-black bg-opacity-10" />
+            </li>
+            <li>
+              <img src="./rsrc/cricket.png" height="40" class="pt-1 rounded-circle bg-success bg-black bg-opacity-10" />
+            </li>
+            <li>
+              <img src="./rsrc/game.png" height="40" class="pt-1 rounded-circle bg-success bg-opacity-10" />
+            </li>
+            <li>
+              <img src="./rsrc/travel.png" height="40" class="pt-1 rounded-circle bg-success bg-black bg-opacity-10" />
+            </li>
+          </ul>
+        </li>
+        <!--  -->
+        <li>
+          <span class="badge text-black fw-bold text-start">Interests:</span>
+          <ul class="d-flex flex-column flex-wrap">
+            <li>Serverless arcitecture</li>
+            <li>Deep Learning</li>
+            <li>API-first development</li>
+            <li>Progressive Web Apps</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <div class="col-md-4 col-sm-6 rounded-3 pb-0" id="div2">
+      <!-- style="background-color: rgb(7, 64, 66); min-height: 460px" -->
+      <!-- rgb(7, 64, 66)    text-light    bg-danger bg-opacity-10-->
+      <span class="px-1 rounded-pill float-end text-black shadow-sm bg-success bg-opacity-10">
+        <i class="fas fa-clipboard-list me-1 shadow-sm"></i>Skills </span>
+      <!--  -->
+      <ul class=" pb-0 mt-md-5 mt-sm-3 mt-1 d-flex flex-column gap-1 flex-wrap list-unstyled h-100 w-100 text-black">
+        <li class="w-100 rounded-3 bg-success bg-opacity-10">
+          <span class="mb-1 d-block text-center shadow-sm badge bg-success bg-opacity-25 text-black">Coding &
+            Algorithm</span>
+          <ul style="font-size: 15px;">
+            <li class="text-black text-opacity-75"> UVA Problem Solving<a class="ms-1"
+                href="https://uhunt.onlinejudge.org/id/759640" target="_blank">uHunt Profile</a>
+            </li>
+            <li class="text-black text-opacity-75"> Classic Algorithm: <a class="ms-1"
+                href="https://github.com/masumkhan081//trad_algo" target="_blank">Github </a>
+            </li>
+            <li class="text-black text-opacity-75"> Machine Learning (raw-coding): <a class="ms-1"
+                href="https://github.com/masumkhan081//machine_algorithm" target="_blank">Github </a>
+            </li>
+            <li class="text-black text-opacity-75"> ML Algorithm (Scikit-Learn): <a class="ms-1"
+                href="https://github.com/masumkhan081//machine_algorithm" target="_blank">Github </a>
+            </li>
+          </ul>
+        </li>
+        <!-- bg-success bg-opacity-10 -->
+        <li class="w-100 rounded-3 bg-success bg-opacity-10">
+          <ul style="font-size: 15px;">
+            <li class="mt-2 mb-1 d-block text-center shadow-sm badge bg-success bg-opacity-50 text-black"> Front-end
+            </li>
+            <li class="text-black text-opacity-75">react, redux</li>
+            <li class="text-black text-opacity-75">next (40%)</li>
+            <li class="text-black text-opacity-75"> material UI, bootstrap, tailwind CSS </li>
+            <li class="text-black text-opacity-75"> Others: axios, async, react-router, react-table, react-spring,
+              react-icon, and recharts etc. </li>
+          </ul>
+        </li>
+        <li class="w-100 rounded-3 bg-success bg-opacity-10">
+          <ul style="font-size: 15px;">
+            <li class="mt-2 mb-1 d-block text-center shadow-sm badge bg-success bg-opacity-50 text-black"> Back-end
+            </li>
+            <li class="text-black text-opacity-75">express</li>
+            <li class="text-black text-opacity-75">firebase-firestore</li>
+            <li class="text-black text-opacity-75"> others: passport, nodemailer, bcrypt, multer, jwt, validator,
+              socket.io, moment </li>
+          </ul>
+        </li>
+        <li class="rounded-3 bg-success bg-opacity-10">
+          <ul style="font-size: 15px;">
+            <li
+              class="ms-0 ps-0 mt-2 mb-1 d-block w-100 text-center shadow-sm badge bg-success bg-opacity-50 text-black">
+              Data-tier </li>
+            <li class="text-black text-opacity-75">MongoDB (mongoose)</li>
+            <li class="text-black text-opacity-75">PostgreSQL(pg)</li>
+            <li class="text-black text-opacity-75">SQLite</li>
+          </ul>
+        </li>
+        <li class="w-100 rounded-3 bg-success bg-opacity-10">
+          <span class="mt-2 mb-1 d-block text-center shadow-sm badge bg-success bg-opacity-25 text-black"> Personal
+            Skill</span>
+          <ul style="font-size: 15px;">
+            <li class="text-black text-opacity-75"> Programming & problem solving ability </li>
+            <li class="text-black text-opacity-75">Fast self-learning</li>
+            <li class="text-black text-opacity-75"> Logical & structured thinking </li>
+            <li class="text-black text-opacity-75"> Good communication skill (Eng) </li>
+            <li class="text-black text-opacity-75"> Good at understanding user requirement </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <div class="col-md-3 col-sm-10 rounded-3" id="div3">
+      <!-- text-light text-opacity-75 -->
+      <!-- shadow-sm  bg-warning bg-opacity-10 -->
+      <!-- border-0 border-bottom border-warning -->
+      <span class="px-1 rounded-pill float-end text-black shadow-sm bg-success bg-opacity-10">
+        <i class="fas fa-list-alt me-1"></i>Projects </span>
+      <div class="bg-success bg-opacity-10 d-flex flex-column mt-md-5 w-100 rounded-3" id="div3inner">
+        <div class="w-100 pb-1">
+          <span class="w-100 d-block text-center bg-success bg-opacity-25 fw-bold text-black border-0 "> drugs-info
+          </span>
+          <ul style="font-size: 14px;" class="px-2 list-unstyled">
+            <li><span class="text-primary">Summary:</span> </li>
+            <li class=" text-wrap"><span class="text-primary">Tools:</span> mongoose, express, mongoDB atlas, ejs</li>
+            <li> <a href="./deploy.html" target="_blank" class="float-start"><i
+                  class="fa-sharp fa-solid fa-link me-1"></i>Deployed</a>
+              <a href="./deploy.html" target="_blank" class="float-end"><i
+                  class="fa-brands fa-youtube text-danger me-1"></i>Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-100 pb-1">
+          <span class="w-100  d-block text-center bg-success bg-opacity-25 fw-bold text-black border-0"> resume-builder
+          </span>
+          <ul style="font-size: 14px;" class="px-2 list-unstyled">
+            <li> <span class="text-primary">Summary:</span></li>
+            <li class="text-wrap"> <span class="text-primary">Tools:</span> react (with context), firebase + firestore,
+              bs5, react-pdf, react-icon</li>
+            <li> <a href="./deploy.html" target="_blank" class="float-start"><i
+                  class="fa-sharp fa-solid fa-link me-1"></i>Deployed</a>
+              <a href="./deploy.html" target="_blank" class="float-end"><i
+                  class="fa-brands fa-youtube text-danger me-1"></i>Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-100 pb-1">
+          <span class="w-100  d-block text-center bg-success bg-opacity-25 fw-bold text-black border-0"> reg-system
+          </span>
+          <ul style="font-size: 14px;" class="px-2 py-1 list-unstyled">
+            <li><span class="text-primary">Summary:</span></li>
+            <li class=" text-wrap"><span class="text-primary">Tools:</span> mongoose + mongodb atlas, passport,
+              nodemailer, express-ejs-layout</li>
+            <li> <a href="./deploy.html" target="_blank" class="float-start"><i
+                  class="fa-sharp fa-solid fa-link me-1"></i>Deployed</a>
+              <a href="./deploy.html" target="_blank" class="float-end"><i
+                  class="fa-brands fa-youtube text-danger me-1"></i>Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-100 pb-1">
+          <span class="w-100  d-block text-center bg-success bg-opacity-25 fw-bold text-black border-0"> task manager
+          </span>
+          <ul style="font-size: 14px;" class="px-2 list-unstyled">
+            <li><span class="text-primary">Summary:</span></li>
+            <li class="text-wrap"><span class="text-primary">Tools:</span> react + redux, postgreSQL, material ui</li>
+            <li> <a href="./deploy.html" target="_blank" class="float-start"><i
+                  class="fa-sharp fa-solid fa-link me-1"></i>Deployed</a>
+              <a href="./deploy.html" target="_blank" class="float-end"><i
+                  class="fa-brands fa-youtube text-danger me-1"></i>Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-100 pb-1">
+          <span class="w-100  d-block text-center bg-success bg-opacity-25 fw-bold text-black border-0"> hospital mgmt
+            sys </span>
+          <ul style="font-size: 14px;" class="px-2 py-1 list-unstyled">
+            <li><span class="text-primary">Summary:</span></li>
+            <li class="  text-wrap "><span class="text-primary">Tools:</span> java swing, SQLite</li>
+            <li> <a href="./deploy.html" target="_blank" class="float-start"><i
+                  class="fa-sharp fa-solid fa-link me-1"></i>Deployed</a>
+              <a href="./deploy.html" target="_blank" class="float-end"><i
+                  class="fa-brands fa-youtube text-danger me-1"></i>Demo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-100 pb-1">
+          <span class="w-100  d-block text-center bg-success bg-opacity-25 fw-bold text-black border-0"> pharmacy mgmt
+          </span>
+          <ul style="font-size: 14px;" class="px-2 list-unstyled">
+            <li><span class="text-primary">Summary:</span></li>
+            <li class="  text-black text-wrap"><span class="text-primary">Tools:</span> javaFx, sqlite</li>
+            <li> <a href="./deploy.html" target="_blank" class="float-start"><i
+                  class="fa-sharp fa-solid fa-link me-1"></i>Deployed</a>
+              <a href="./deploy.html" target="_blank" class="float-end"><i
+                  class="fa-brands fa-youtube text-danger me-1"></i>demo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hobby icons,lik without text, interests, about me -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script>
+    function clcikmeth() {
+      if (document.getElementById("btn_toggle").innerHTML == "Dark") {
+        document.getElementById("btn_toggle").innerHTML = "Light";
+        document.getElementById("body").className = "";
+        document.getElementById("body").style =
+          "background-color:DarkSlateGray";
+        document.getElementById("div3").className =
+          "col-md-3 bg-warning bg-opacity-10 text-light";
+
+        document.getElementById("div3inner").className = " text-light";
+        document.getElementById("div2").style =
+          "background-color: rgb(19, 60, 60);";
+      } else {
+        document.getElementById("btn_toggle").innerHTML = "Dark";
+        document.getElementById("div3").className =
+          "bg-dark col-md-3 bg-opacity-75";
+        document.getElementById("div2").style =
+          "background-color: rgb(109, 60, 0);";
+      }
+    }
+  </script>
+</body>
+
+</html>
