@@ -17,7 +17,7 @@ export default function page() {
       className="w-1/2"
     >
       <span className="text-3xl block text-center border border-t-orange-300 h-full w-full ">
-        Live Projects With Link To Be Here
+        Live Projects With Link To Be Here !
       </span>
     </animated.div>
   );
