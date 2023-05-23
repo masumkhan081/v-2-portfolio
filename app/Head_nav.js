@@ -5,8 +5,8 @@ import LinkIcon from "./icons/LinkIcon";
 import DevelopmentIcon from "./icons/DevelopmentIcon";
 export default function Head_nav() {
   return (
-    <div className="flex border flex-wrap justify-end px-3 h-23 bg-gradient-to-b from-orange-300">
-      <ul className="flex border  md:justify-end sm:flex-row flex-col w-full sm:gap-4 gap-2 items-center font-mono py-2">
+    <div className="w-screen flex border flex-wrap justify-center px-3 h-23 bg-gradient-to-b from-orange-300">
+      <ul className="flex border  md:justify-center sm:flex-row flex-col w-full sm:gap-4 gap-2 items-center font-mono py-2">
         <li className=" rounded-lg">
           <a
             href="#algorithms"
