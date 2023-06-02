@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function DownloaIcon() {
+export default function DownloaIcon({ clsnames }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className="w-5 h-5 mr-1 inline"
+      className={clsnames}
     >
       <path
         fillRule="evenodd"

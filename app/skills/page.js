@@ -12,14 +12,14 @@ import DBSkill from "./DBSkill";
 export default function page() {
   //
   const springs = useSpring({
-    // from: { y: 100 },
-    // to: { y: 0 },
+    from: { y: 100 },
+    to: { y: 0 },
   });
   //
   return (
     <div className="w-screen  h-full">
       <div
-        className="  w-full h-auto mt-10 px-5 flex flex-wrap  justify-center gap-y-5"
+        className="  w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-5"
         style={{
           ...springs,
         }}

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-export default function DBIcon() {
+export default function DBIcon({ clsnames }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +8,7 @@ export default function DBIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-5 h-5 inline"
+      className={clsnames}
     >
       <path
         strokeLinecap="round"

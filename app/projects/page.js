@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
+import Project from "./project";
 import { animated, useSpring } from "@react-spring/web";
+import data from "./data";
 //
 export default function page() {
   const springs = useSpring({
@@ -9,56 +11,15 @@ export default function page() {
   });
   //
   return (
-    <div className="h-screen w-screen border m-5 flex flex-wrap gap-3">
-      <div className="border md:w-1/3 sm:w-1/2 w-screen">
-        <ul className="mt-3">
-          <li className="mb-1">
-            <span className=" mr-1 rounded-md bg-emerald-700 text-lime-50 font-semi-bold px-1">
-              Main
-            </span>
-            React - Redux - Next
-          </li>
-          <li className="mb-1">
-            <span className=" mr-1 rounded-md bg-emerald-700 text-lime-50 font-semi-bold px-1">
-              Main
-            </span>
-            React - Redux - Next
-          </li>
-        </ul>
-      </div>
-
-      <div className="border">
-        <ul className="mt-3">
-          <li className="mb-1">
-            <span className=" mr-1 rounded-md bg-emerald-700 text-lime-50 font-semi-bold px-1">
-              Main
-            </span>
-            React - Redux - Next
-          </li>
-          <li className="mb-1">
-            <span className=" mr-1 rounded-md bg-emerald-700 text-lime-50 font-semi-bold px-1">
-              Main
-            </span>
-            React - Redux - Next
-          </li>
-        </ul>
-      </div>
-      <div className="border">
-        <ul className="mt-3">
-          <li className="mb-1">
-            <span className=" mr-1 rounded-md bg-emerald-700 text-lime-50 font-semi-bold px-1">
-              Main
-            </span>
-            React - Redux - Next
-          </li>
-          <li className="mb-1">
-            <span className=" mr-1 rounded-md bg-emerald-700 text-lime-50 font-semi-bold px-1">
-              Main
-            </span>
-            React - Redux - Next
-          </li>
-        </ul>
-      </div>
+    <div className=" w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-10 pb-10">
+      {data.map((dt, i) => (
+        <Project
+          key={i}
+          name={dt.name}
+          summary={dt.summary}
+          versions={dt.versions}
+        />
+      ))}
     </div>
   );
 }
