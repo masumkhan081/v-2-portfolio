@@ -4,7 +4,7 @@ import SkillSetIcon from "../resources/icons/SkillSetIcon";
 export default function FrontEnd() {
   return (
     <div className="bg-gradient-to-b from-teal-600 rounded-md bg-opacity-75 md:w-1/3 sm:w-1/2 w-screen p-3 bg-teal-800">
-      <span className="block text-base font-bold bg-teal-800 text-green-200   text-center rounded-sm">
+      <span className="block text-base font-bold bg-teal-800 text-green-200 text-center rounded-sm">
         <SkillSetIcon clsnames="me-1 inline w-6 h-6"/> Front-End
       </span>
       <ul className="my-3  space-y-2 text-green-200">

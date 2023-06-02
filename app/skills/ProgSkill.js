@@ -8,7 +8,7 @@ import Github from "../resources/icons/Github";
 export default function ProgSkill() {
   return (
     <div className="per_skills  bg-gradient-to-t from-teal-600 rounded-md bg-opacity-75 shadow md:w-1/3 sm:w-2/5 w-screen p-3 bg-teal-800">
-      <span className="block  text-base font-bold bg-teal-800 text-orange-300   text-center rounded-sm">
+      <span className="block  text-base font-bold bg-teal-900 text-green-200  text-center rounded-sm">
         <SkillSetIcon clsnames="me-1 inline w-6 h-6" /> Programming
       </span>
       <ul className="mt-4 mb-2 flex flex-col gap-3  w-full ">
@@ -19,7 +19,8 @@ export default function ProgSkill() {
           <ul className="flex flex-row gap-2 w-full">
             <li className="w-full">
               <a
-                className="text-transform: capitalize w-full  ms-1 btn btn-sm shadow-md shadow-green-200   bg-teal-700 border-b-4 border-teal-600 text-blue-400 target:shadow-lg"
+                className="ms-1 w-full text-transform: capitalize shadow-sm shadow-green-200 text-slate-100 px-3  btn btn-sm rounded-md my-0 py-0  border-b-4 border-green-950
+              hover:border-teal-500 bg-teal-700 "
                 href="https://uhunt.onlinejudge.org/id/759640"
                 target="_blank"
               >
@@ -29,16 +30,18 @@ export default function ProgSkill() {
             <li className="w-full">
               <label
                 htmlFor="modal-uhunt"
-                className="ms-1 w-full text-transform: capitalize shadow-md shadow-green-200 text-blue-400 px-3 border-b-4 btn btn-sm border-teal-600   bg-teal-700 "
+                className="ms-1 w-full text-transform: capitalize shadow-sm shadow-green-200 text-slate-100 px-3  btn btn-sm rounded-md my-0 py-0  border-b-4 border-green-950
+              hover:border-teal-500 bg-teal-700 "
               >
                 uhunt stats
               </label>
+
               <Uhunt_Stats />
             </li>
           </ul>
         </li>
         <li>
-          <span className=" mr-1  text-center rounded-md   text-green-200 font-semi-bold px-1">
+          <span className=" mr-1  text-center rounded-md text-green-200 font-semi-bold px-1">
             Algorithm Implementations
           </span>
           <ul className="w-full space-y-2">

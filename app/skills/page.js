@@ -17,9 +17,9 @@ export default function page() {
   });
   //
   return (
-    <div className="w-screen  h-full">
+    <div className="w-screen  h-full pb-5">
       <div
-        className="  w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-5"
+        className="  w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-5 mb-3"
         style={{
           ...springs,
         }}
