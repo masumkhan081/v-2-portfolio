@@ -104,7 +104,7 @@ function Cl_Algo_Modal() {
           <div className="flex flex-row justify-between gap-2 my-2 ">
             <h3 className="font-bold text-lg text-center text-slate-500">
               Classic Algorithms{" "}
-              <span className="badge text-slate-200 bg-success bg-opacity-5 border-0 text-green-600">
+              <span className="badge bg-success bg-opacity-5 border-0 text-green-500">
                 Click On Category to Expand{" "}
               </span>
             </h3>
