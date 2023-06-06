@@ -1,26 +1,28 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import DownloaIcon from "./resources/icons/DownloaIcon";
 import InfoIcon from "./resources/icons/InfoIcon";
 import LinkIcon from "./resources/icons/LinkIcon";
 import DevelopmentIcon from "./resources/icons/DevelopmentIcon";
 import Home from "./resources/icons/Home";
+import MasumK from "./resources/images/mk_avatar.png";
 import { animated, useSpring } from "@react-spring/web";
 
 //
 export default function Head_nav() {
   const springs_left_right = useSpring({
     from: {
-      x: 0,
+      x: -100,
     },
-    to: { x: -100 },
+    to: { x: 0 },
   });
   const springs_right_left = useSpring({
     from: {
-      x: 0,
+      x: 100,
     },
-    to: { x: 100 },
+    to: { x: 0 },
   });
   return (
     <div className="w-screen flex flex-wrap justify-center px-3 md:py-5 sm:py-2 bg-teal-800 rounded-md  ">
@@ -44,6 +46,14 @@ export default function Head_nav() {
             Live Projects
           </a>
         </animated.li>
+        {/* <li>
+          <Image
+            style={{ borderRadius: "15px" }}
+            className="w-8 h-8 rounded-lg block "
+            src={MasumK}
+            alt="Masum Khan"
+          />
+        </li> */}
         <animated.li
           style={{ ...springs_right_left, textShadow: "2px 2px 4px #000000" }}
           className="rounded-s-md italic border-l-2 border-amber-500 sm:text-base text-xs sm:shadow-lg shadow-sm shadow-teal-400 sm:w-fit w-full sm:ps-0 ps-5  text-orange-200  transition ease-in-out delay-100 hover:text-teal-200 hover:-translate-y-0.5 hover:scale-110 hover:rounded-xl hover:bg-teal-600 duration-200 "

@@ -1,69 +1,56 @@
 import React from "react";
 import Image from "next/image";
 import Uhunt from "../resources/images/Uhunt.png";
+// import { Github } from "react-icons/ai";
 import SkillSetIcon from "../resources/icons/SkillSetIcon";
 import Github from "../resources/icons/Github";
 
 //
 export default function ProgSkill() {
   return (
-    <div className="per_skills  bg-gradient-to-t from-teal-600 rounded-md bg-opacity-75 shadow md:w-1/3 sm:w-2/5 w-screen p-3 bg-teal-800">
+    <div className="per_skills bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow md:w-1/3 sm:w-2/5 w-screen p-3 ">
       <span className="block  text-base font-bold bg-teal-900 text-green-200  text-center rounded-sm">
         <SkillSetIcon clsnames="me-1 inline w-6 h-6" /> Programming
       </span>
       <ul className="mt-4 mb-2 flex flex-col gap-3  w-full ">
-        <li className="mb-1  w-full">
-          <span className=" mr-1 w-fit text-center rounded-md   text-green-200 font-semi-bold px-1">
-            UVA Problem Solving
-          </span>
-          <ul className="flex flex-row gap-2 w-full">
-            <li className="w-full">
-              <a
-                className="ms-1 w-full text-transform: capitalize shadow-sm shadow-green-200 text-slate-100 px-3  btn btn-sm rounded-md my-0 py-0  border-b-4 border-green-950
-              hover:border-teal-500 bg-teal-700 "
-                href="https://uhunt.onlinejudge.org/id/759640"
-                target="_blank"
-              >
-                uHunt Profile
-              </a>
-            </li>
-            <li className="w-full">
-              <label
-                htmlFor="modal-uhunt"
-                className="ms-1 w-full text-transform: capitalize shadow-sm shadow-green-200 text-slate-100 px-3  btn btn-sm rounded-md my-0 py-0  border-b-4 border-green-950
-              hover:border-teal-500 bg-teal-700 "
-              >
-                uhunt stats
-              </label>
-
-              <Uhunt_Stats />
-            </li>
-          </ul>
+        <li className="w-fit ">
+          <a
+            className="mx-2 btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow  "
+            href="https://uhunt.onlinejudge.org/id/759640"
+            target="_blank"
+          >
+            UVA uHunt Profile
+          </a>
         </li>
-        <li>
-          <span className=" mr-1  text-center rounded-md text-green-200 font-semi-bold px-1">
-            Algorithm Implementations
-          </span>
-          <ul className="w-full space-y-2">
-            <li className="w-full">
-              <label
-                htmlFor="modal-classicalgo"
-                className="ms-1 w-full text-transform: capitalize  text-slate-100 px-3 btn btn-sm rounded-md my-0 py-0 border-b-4 border-green-950 hover:border-teal-500 bg-teal-700 "
-              >
-                Classic Algorithm
-              </label>
-              <Cl_Algo_Modal />
-            </li>
-            <li className="w-full">
-              <label
-                htmlFor="modal-ml"
-                className="ms-1 w-full text-transform: capitalize text-slate-100 px-2 btn btn-sm rounded-md my-0 py-0 border-b-4 border-green-950 hover:border-teal-500 bg-teal-700 "
-              >
-                Machine Learning
-              </label>
-              <ML_Modal />
-            </li>
-          </ul>
+
+        <li className="w-fit ms-4">
+          <label
+            htmlFor="modal-uhunt"
+            className=" px-2 btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow "
+          >
+            UVA uhunt stats
+          </label>
+
+          <Uhunt_Stats />
+        </li>
+
+        <li className="w-fit ms-6">
+          <label
+            htmlFor="modal-classicalgo"
+            className="  btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow  "
+          >
+            Classic Algorithm
+          </label>
+          <Cl_Algo_Modal />
+        </li>
+        <li className="w-fit ms-8">
+          <label
+            htmlFor="modal-ml"
+            className=" btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow "
+          >
+            Machine Learning
+          </label>
+          <ML_Modal />
         </li>
       </ul>
     </div>
@@ -112,16 +99,223 @@ function Cl_Algo_Modal() {
   return (
     <>
       <input type="checkbox" id="modal-classicalgo" className="modal-toggle" />
-      <div className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">Classic Algorithms</h3>
-          <p className="py-4">
-            You've been selected for a chance to get one year of subscription to
-            use Wikipedia for free!
-          </p>
-          <div className="modal-action">
-            <label htmlFor="modal-classicalgo" className="btn">
-              Yay!
+      <div className="modal modal-bottom sm:modal-middle ">
+        <div className="modal-box py-0 ">
+          <div className="flex flex-row justify-between gap-2 my-2 ">
+            <h3 className="font-bold text-lg text-center text-slate-500">
+              Classic Algorithms{" "}
+              <span className="badge text-slate-200 bg-success bg-opacity-5 border-0 text-green-600">
+                Click On Category to Expand{" "}
+              </span>
+            </h3>
+            <label
+              htmlFor="modal-classicalgo"
+              className="btn btn-sm btn-square btn-outline px-2 w-fit"
+            >
+              x
+            </label>
+          </div>
+
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Backtracking
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                4
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm list-disc list-inside ">
+                <li>Knights tour</li>
+                <li>The Word Break Problem</li>
+              </ul>
+              <ul className="text-sm list-disc list-inside ">
+                <li>Rat In A Maze</li>
+                <li>N Queen</li>
+              </ul>
+            </div>
+          </div>
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Dynamic Algorithm
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                20
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm grid sm:grid-cols-2 grid-cols-1 list-disc list-decimal list-inside gap-y-2">
+                <>
+                  <li>Bellman Ford Shortest PAth</li>
+                  <li>Binomial Coefficient Using Dynamic Programming</li>
+                  <li>Coin Change ( Minimum Number Of Coins )</li>
+                  <li>Coin Chang ( Number Of Ways )</li>
+                  <li>Edit Distance Levenshtein</li>
+                  <li>Fibonacci Memoized Version</li>
+                  <li>Fibonacci Tabulated version</li>
+                  <li>Floyed Warshall ShortestPath</li>
+                  <li>Optimal Strategy Game Pick</li>
+                  <li>Weighted Job Scheduling</li>
+                </>
+                <>
+                  <li>Longest Bitonic Subsequence</li>
+                  <li>Longest Common Subsequence</li>
+                  <li>Longest Common Substring</li>
+                  <li>Longest Palindromic Subsequence</li>
+                  <li>Longest Increasing Subsequence</li>
+                  <li>Rod Cutting Problem</li>
+                  <li>Matrix Chain Multiplication</li>
+                  <li>Subset Sum Problem</li>
+                  <li>Text Justification</li>
+                  <li>Zero 1 knapsack</li>
+                </>
+              </ul>
+            </div>
+          </div>
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Graph & Greedy Algorithms{" "}
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                8
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm grid sm:grid-cols-2 grid-cols-1 list-decimal list-inside ">
+                <>
+                  <li>Floyd Warshall</li>
+                  <li>Fractional Knapsack</li>
+                  <li>BellmanFord Algorithm</li>
+                  <li>Topological Sort</li>
+                </>
+                <>
+                  <li>BFS</li>
+                  <li>DFS</li>
+                  <li>Huffman Coding</li>
+                  <li>Dijkstra</li>
+                </>{" "}
+              </ul>
+            </div>
+          </div>
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Number Theory
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                22
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm grid sm:grid-cols-2 grid-cols-1 list-decimal list-inside">
+                <>
+                  <li>Binomial Coefficient SpaceOptimized</li>
+                  <li>Euler Totient Function</li>
+                  <li>Sieve OF Eratosthenes</li>
+                  <li>Chinese Remainder inverse mod based</li>
+                  <li>Primality Test Miller Rabin</li>
+                  <li>Primality Test Fermat Method</li>
+                  <li>Modular multiplicative inverse</li>
+                  <li>Least Common Multiple</li>
+                  <li>Modular Exponentiation</li>
+                  <li>Least Common Multiple LadderMethod</li>
+                </>
+                <>
+                  <li>Wilsons Theorem</li>
+                  <li>Swap Without 3rd Var</li>
+                  <li>Segmented Sieve</li>
+                  <li>Segmented Sieve</li>
+                  <li>Prime factorization</li>
+                  <li>GCD Eucledian</li>
+                  <li>GCF Using LCM</li>
+                  <li>GCF Ladder Method</li>
+                  <li>Goldbechs conjecture</li>
+                  <li>Pollard Rho Algorithm</li>
+                  <li>Minimax Algorithm</li>
+                  <li>Chinese Remainder</li>
+                </>
+              </ul>
+            </div>
+          </div>
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Pattern Matching
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                6
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm grid sm:grid-cols-2 grid-cols-1 list-decimal list-inside">
+                <>
+                  <li>Knuth Moris Pratt</li>
+                  <li>Wild Card Matching</li>
+                  <li>Boyer Moore Horspool</li>
+                </>
+                <>
+                  <li>Rabin Karp</li>
+                  <li>Aho Corasick</li>
+                  <li>Z algorithm</li>
+                </>
+              </ul>
+            </div>
+          </div>
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Recursion
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                10
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm grid sm:grid-cols-2 grid-cols-1 list-decimal list-inside">
+                <>
+                  <li>Binomial Coefficient RecursionApproach</li>
+                  <li>Binary Search Recursive Way</li>
+                  <li>Reversing String Via Recursion</li>
+                  <li>Indirect Recursion</li>
+                  <li>Non Tail Recursion</li>
+                </>
+                <>
+                  <li>Direct Recursion</li>
+                  <li>Factorial</li>
+                  <li>Fibonacci</li>
+                  <li>Tail Recursion</li>
+                  <li>GCD By Recursion</li>
+                </>
+              </ul>
+            </div>
+          </div>
+          <div className="collapse bg-slate-200 py-0 ">
+            <input type="checkbox" className="my-0 py-0" />
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+              Searching And Sorting
+              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+                7
+              </span>
+            </div>
+            <div className="collapse-content ">
+              <ul className="text-sm grid sm:grid-cols-2 grid-cols-1 list-decimal list-inside">
+                <>
+                  <li>Linear search</li>
+                  <li>Binary Search</li>
+                  <li>Bubble Sort</li>
+                  <li>Insertion Sort</li>
+                </>
+                <>
+                  <li>Merge Sort</li>
+                  <li>Quick Sort</li>
+                  <li>Selection Sort</li>
+                </>
+              </ul>
+            </div>
+          </div>
+          <div className="modal-action ">
+            <label
+              htmlFor="modal-classicalgo"
+              className="btn btn-square bg-slate-200 btn-outline btn-sm w-full"
+            >
+              Close
             </label>
           </div>
         </div>
@@ -135,16 +329,30 @@ function ML_Modal() {
       <input type="checkbox" id="modal-ml" className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Machine Learning Works</h3>
+          <h3 className="font-bold text-lg">Machine Learning Raw Coding</h3>
+          <a
+            href="https://github.com/masumkhan081/ml_algo"
+            target="_blank"
+            className="text-blue-300"
+          >
+            <Github clsnames="me-1 w-5 h-5 inline" />
+            Github src
+          </a>
           <div className="py-3">
-            <ul>
-              <li>Recommendation System</li>
-              <li>Cluster Algorithm</li>
+            <ul className="list-inside list-disc">
+              <li>K-nearest Neighbors</li>
+              <li>Naive Bayes classifier</li>
+              <li>Decision tree</li>
+              <li>K-means clustering</li>
+              <li>Stochastic gradient descent</li>
+              <li>Support vector machine</li>
+              <li>Slope One</li>
+              <li>Agglomerative Hierarchical Clustering</li>
             </ul>
           </div>
           <div className="modal-action">
             <label htmlFor="modal-ml" className="btn">
-              Yay!
+              C L O S E
             </label>
           </div>
         </div>

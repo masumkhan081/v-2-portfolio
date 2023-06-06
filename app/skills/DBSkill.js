@@ -30,7 +30,7 @@ export default function FrontEnd() {
             SQL
           </span>
 
-          <ul class="list-unstyled">
+          <ul className="list-unstyled">
             <li>
               PostgreSQL ( pg, sequelize ) /
               <CloudIcon clsnames="me-1 inline w-6 h-6" /> ElephantSQL

@@ -12,13 +12,13 @@ import DBSkill from "./DBSkill";
 export default function page() {
   //
   const springs = useSpring({
-    from: { y: 100 },
-    to: { y: 0 },
+    from: { x: 100, y: 100 },
+    to: { x: 0, y: 0 },
   });
   //
   return (
     <div className="w-screen  h-full pb-5">
-      <div
+      <animated.div
         className="  w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-5 mb-3"
         style={{
           ...springs,
@@ -29,7 +29,7 @@ export default function page() {
         <DBSkill />
         <ProgSkill />
         <PerSkill />
-      </div>
+      </animated.div>
     </div>
   );
 }

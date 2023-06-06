@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import MK from "./resources/images/mk_avatar_bgless.png";
+import MK from "./resources/images/mk_avatar.png";
 import MasumK from "./resources/images/mk.png";
 import Phone from "./resources/icons/Phone";
 import Email from "./resources/icons/Email";
@@ -37,7 +37,7 @@ export default function AboutMe() {
       <div className="w-full mt-2 md:ms-10 sm:ms-0 flex flex-col justify-start align-middle">
         <Image
           style={{ borderRadius: "15px" }}
-          className="w-52 h-56 rounded-lg block "
+          className="w-52 h-58 rounded-lg block "
           src={MasumK}
           alt="Masum Khan"
         />
@@ -161,19 +161,19 @@ export default function AboutMe() {
                 className="w-8 h-8 me-2 inline hover:w-10 hover:h-10  "
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/masumkhan" target="_blank">
               <Linkedin clsnames="inline w-8 h-8 me-1 hover:w-10 hover:h-10" />
             </a>
-            <a href="">
+            <a href="https://github.com/masumkhan081" target="_blank">
               <Github clsnames="inline w-8 h-8 me-1 hover:w-10 hover:h-10" />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/fanofnietzsche" target="_blank">
               <BsFacebook className="inline w-7 h-7 me-1 hover:w-9 hover:h-9 text-blue-700" />
             </a>
-            <a href="">
+            <a href="https://twitter.com/MasumKhan081" target="_blank">
               <FaTwitter className="inline w-7 h-7 me-1 hover:w-9 hover:h-9 text-blue-400" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/masumkhan081" target="_blank">
               <FaInstagram className="inline w-7 h-7 me-1 hover:w-9 hover:h-9 text-red-700" />
             </a>
           </div>

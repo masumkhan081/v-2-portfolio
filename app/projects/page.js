@@ -6,12 +6,15 @@ import data from "./data";
 //
 export default function page() {
   const springs = useSpring({
-    from: { x: 0 },
-    to: { x: 100 },
+    from: { opacity: 0.5 },
+    to: { opacity: 1 },
   });
   //
   return (
-    <div className=" w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-10 pb-10">
+    <animated.div
+      style={{ ...springs }}
+      className=" w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-10 pb-10"
+    >
       {data.map((dt, i) => (
         <Project
           key={i}
@@ -20,6 +23,6 @@ export default function page() {
           versions={dt.versions}
         />
       ))}
-    </div>
+    </animated.div>
   );
 }
