@@ -22,7 +22,7 @@ const data = [
   },
   {
     name: "Deshcareer website",
-    summary: "Business website",
+    summary: "A regular business site with no back-end.",
 
     versions: [
       {
