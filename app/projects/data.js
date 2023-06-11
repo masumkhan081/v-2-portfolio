@@ -21,6 +21,20 @@ const data = [
     ],
   },
   {
+    name: "Deshcareer website",
+    summary: "Business website",
+
+    versions: [
+      {
+        version: "1",
+        deploy_link: "https://deshcareer.vercel.app/",
+        github_link: "https://github.com/masumkhan081/deshcareer",
+        yt_link: "",
+        tools: ["React-Next", "Tailwind CSS", "React-spring"],
+      },
+    ],
+  },
+  {
     name: "Task-Distribution",
     summary:
       "To assign, mark, and manage tasks in-between project manager -> team lead -> team member including the with option to invite a new employee over email with a defined role (jwt token) as a user of this system. An admin add/assign task for managers, a project manager may assign task to any team-lead, a team lead can assign task to his team- members ",
