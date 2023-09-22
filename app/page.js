@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Head_nav from "./Head_nav";
+import Head_nav from "./Nav";
 import AboutMe from "./AboutMe";
 //
 export default function Home() {
   return (
-    <div className="root">
+    <div className="flex-grow bg-teal-700 border-2 border-teal-700 rounded-md">
       <AboutMe />
     </div>
   );

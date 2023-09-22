@@ -11,7 +11,7 @@ import MasumK from "./resources/images/mk_avatar.png";
 import { animated, useSpring } from "@react-spring/web";
 
 //
-export default function Head_nav() {
+export default function Nav() {
   const springs_left_right = useSpring({
     from: {
       x: -100,
@@ -71,7 +71,7 @@ export default function Head_nav() {
         </li> */}
         <animated.li
           style={{ ...springs_right_left, textShadow: "2px 2px 4px #000000" }}
-          className="rounded-s-md italic border-l-2 border-amber-500 sm:text-base text-xs sm:shadow-lg shadow-sm shadow-teal-400 sm:w-fit w-full sm:ps-0 ps-5  text-orange-200  transition ease-in-out delay-100 hover:text-teal-200 hover:-translate-y-0.5 hover:scale-110 hover:rounded-xl hover:bg-teal-600 duration-200 "
+          className=" nav_li "
         >
           <a
             href="/skills"

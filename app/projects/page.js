@@ -2,7 +2,7 @@
 import React from "react";
 import Project from "./project";
 import { animated, useSpring } from "@react-spring/web";
-import data from "./data";
+import data from "../data/projects";
 //
 export default function page() {
   const springs = useSpring({

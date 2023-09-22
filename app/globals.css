@@ -6,7 +6,20 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-} 
-.menuLink {
+}
 
+.btn_nav {
+  @apply bg-teal-900 text-slate-200 text-center  px-2 py-1 rounded-md  text-sm font-averia tracking-02;
+}
+
+.icn_socials{
+  @apply inline mx-1 w-2.5 h-2.5 text-teal-800 bg-slate-300  border-teal-800 border p-1 rounded-full 
+}
+
+.icn_nav{
+  @apply inline mx-1 w-1.5 h-1.5
+}
+
+.nav_li {
+  @apply rounded-s-md italic border-l-2 border-red-500 sm:text-base text-xs sm:shadow-lg shadow-sm shadow-teal-400 sm:w-fit w-full sm:ps-0 ps-5  text-orange-200  transition ease-in-out delay-100 hover:text-teal-200 hover:-translate-y-0.5 hover:scale-110 hover:rounded-xl hover:bg-teal-600 duration-200;
 }
