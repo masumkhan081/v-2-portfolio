@@ -1,4 +1,4 @@
-import Nav from "./Nav";
+import Nav from "./void/Nav";
 import Nav2 from "./Nav2";
 import "./globals.css";
 

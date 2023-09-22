@@ -13,7 +13,7 @@ export default function page() {
   return (
     <animated.div
       style={{ ...springs }}
-      className=" w-full h-auto mt-10 px-5 flex flex-wrap  justify-around gap-y-10 pb-10"
+      className=" w-full h-auto mt-4 sm:px-5 flex flex-wrap  justify-around gap-y-4 pb-6"
     >
       {data.map((dt, i) => (
         <Project

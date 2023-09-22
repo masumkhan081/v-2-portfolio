@@ -37,7 +37,7 @@ export default function AboutMe() {
   });
 
   return (
-    <div className="h-full px-1.5 pt-2.0 pb-1.5 grid md:grid-cols-2 grid-cols-1 gap-4 bg-slate-100 border-2 border-teal-700 rounded-md">
+    <div className="h-full px-1.5 pt-2.0 pb-1.5 grid md:grid-cols-2 grid-cols-1 gap-4 bg-slate-200 border-2 border-teal-700 rounded-md">
       <div className="col-span-1  flex flex-col gap-4 justify-start ">
         <Image
           className="w-52 h-58 rounded-md  "

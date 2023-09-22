@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Head_nav from "./Nav";
+import Head_nav from "./void/Nav";
 import AboutMe from "./AboutMe";
 //
 export default function Home() {

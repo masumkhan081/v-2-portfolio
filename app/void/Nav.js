@@ -2,12 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import DownloaIcon from "./resources/icons/DownloaIcon";
-import InfoIcon from "./resources/icons/InfoIcon";
-import LinkIcon from "./resources/icons/LinkIcon";
-import DevelopmentIcon from "./resources/icons/DevelopmentIcon";
-import Home from "./resources/icons/Home";
-import MasumK from "./resources/images/mk_avatar.png";
+import DownloaIcon from "../resources/icons/DownloaIcon";
+import InfoIcon from "../resources/icons/InfoIcon";
+import LinkIcon from "../resources/icons/LinkIcon";
+import DevelopmentIcon from "../resources/icons/DevelopmentIcon";
+import Home from "../resources/icons/Home";
+import MasumK from "../resources/images/mk_avatar.png";
 import { animated, useSpring } from "@react-spring/web";
 
 //
