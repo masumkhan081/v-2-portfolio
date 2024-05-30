@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { ImLocation2 } from "react-icons/im";
 import { BsFillPersonFill } from "react-icons/bs";
-import ListItem from "../commonUI/ListItem";
+import ListItem from "../UI-shared/ListItem";
 
 export default function Personal() {
   const persInfo = [

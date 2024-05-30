@@ -1,4 +1,4 @@
-import Nav2 from "./Nav2";
+import NavTop from "./components/NavTop";
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex flex-col bg-teal-700 w-full min-h-screen">
-        <Nav2 />
+        <NavTop />
         {children}
       </body>
     </html>

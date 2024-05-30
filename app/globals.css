@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.nav_drop_down {
+  @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
+}
+
 .btn_nav {
   @apply bg-teal-900 text-orange-200 text-center  px-2 py-1 rounded-md  text-sm font-averia tracking-02;
 }
@@ -21,5 +25,5 @@
 }
 
 .nav_link {
-  @apply flex justify-between items-center bg-teal-900 text-center pr-2 rounded-md  font-averia tracking-tight sm:text-base text-sm sm:w-fit w-full text-orange-200  transition ease-in-out delay-100 hover:text-teal-200 hover:-translate-y-[4px] hover:scale-110 hover:rounded-xl hover:bg-teal-600 duration-200;
+  @apply flex justify-between items-center bg-teal-900 text-center pr-2 rounded-md  font-averia tracking-tight sm:text-base text-sm sm:w-fit w-full text-orange-300 hover:text-teal-200 transition;
 }

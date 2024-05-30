@@ -1,7 +1,7 @@
 import React from "react"; 
 import {AiOutlineClose} from 'react-icons/ai'
-import Button from "../commonUI/Button";
-import Title from "../commonUI/Title";
+import Button from "../UI-shared/Button";
+import Title from "../UI-shared/Title";
 
 export default function ({ onClose }) {
   return (

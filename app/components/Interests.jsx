@@ -1,17 +1,14 @@
 import React from "react";
-import ListItem from "../commonUI/ListItem";
+import ListItem from "../UI-shared/ListItem";
+import { interests } from "../data/interests";
 
 export default function Interests() {
-  const interests = [
-    "API First Development",
-    "Serverless arcitecture",
-    "Progressive Web Apps",
-    "Deep Learning",
-  ];
   return (
     <>
       {interests.map((interest, ind) => {
-        return <ListItem key={ind} plainText={interest} />;
+        return (
+          <ListItem key={ind} plainText={interest.title} icon={interest.icon} />
+        );
       })}
     </>
   );

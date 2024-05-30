@@ -1,8 +1,8 @@
 import React from "react";
-import LinkIcon from "../resources/icons/LinkIcon";
-import Youtube from "../resources/icons/Youtube";
-import Github from "../resources/icons/Github";
-import YT2 from "../resources/icons/YT2";
+import LinkIcon from "../../public/icons/LinkIcon";
+import Youtube from "../../public/icons/Youtube";
+import Github from "../../public/icons/Github";
+import YT2 from "../../public/icons/YT2";
 
 export default function Project({ name, versions, summary }) {
   return (
