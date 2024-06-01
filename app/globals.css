@@ -13,17 +13,21 @@
 }
 
 .btn_nav {
-  @apply bg-teal-900 text-orange-200 text-center  px-2 py-1 rounded-md  text-sm font-averia tracking-02;
+  @apply bg-orange-800 text-wh text-center  px-3 py-1 rounded-md  text-sm font-averia;
 }
 
 .icn_socials {
-  @apply inline mx-1 w-2.5 h-2.5 text-teal-800 bg-slate-300  border-teal-800 border p-1 rounded-full;
+  @apply inline  w-8 h-8 text-teal-800 bg-slate-300  border-teal-800 border-b-2 p-1 ;
+}
+
+.icn_socials_w8 {
+  @apply inline  w-8 h-8 text-teal-800 bg-slate-300  border-teal-800 border-b rounded-full;
 }
 
 .icn_nav {
-  @apply inline mx-2 w-5 h-5 my-0.125;
+  @apply inline mx-1 w-4 h-4 my-1;
 }
 
 .nav_link {
-  @apply flex justify-between items-center bg-teal-900 text-center pr-2 rounded-md  font-averia tracking-tight sm:text-base text-sm sm:w-fit w-full text-orange-300 hover:text-teal-200 transition;
+  @apply flex gap-1 justify-center items-center bg-emerald-800 text-center px-2 font-sans text-sm sm:w-fit w-full text-orange-300 hover:text-teal-400 ;
 }

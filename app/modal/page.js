@@ -1,5 +1,5 @@
 import React from "react";
-import ModalTriggers from "../components/ModalTriggers";
+import ModalTriggers from "../UI-components/ModalTriggers";
 
 export default function page() {
   return (

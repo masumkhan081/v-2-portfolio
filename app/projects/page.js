@@ -2,17 +2,17 @@
 import React, { useEffect } from "react";
 import Project from "./project";
 // import { animated, useSpring } from "@react-spring/web";
-import data from "../data/projects";
+import data from "../data/projects.data";
 //
 export default function page() {
-  useEffect(() => {
-    const isServer = typeof window === "undefined";
-    if (isServer) {
-      console.log("server side");
-    } else {
-      console.log("client side");
-    }
-  });
+  // useEffect(() => {
+  //   const isServer = typeof window === "undefined";
+  //   if (isServer) {
+  //     console.log("server side");
+  //   } else {
+  //     console.log("client side");
+  //   }
+  // });
 
   // const springs = useSpring({
   //   from: { opacity: 0.5 },

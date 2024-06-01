@@ -96,6 +96,11 @@ module.exports = {
         "3.25/3.5": ["3.25rem", "3.5rem"],
       },
       colors: {
+        "dark-green":"#05201F",
+        "dark-brown":"#362B06",
+        "tea-green":"#DCFFB9",
+        "papaya-whip":"#FFEACC",
+        "acquamarine":"#BFFFE4",
         pr: "#E2E8F0",
         "pr/300": "#6BCCCB",
         wh: "#FFFFFF",

@@ -3,7 +3,7 @@ import {AiOutlineClose} from 'react-icons/ai'
 import Button from "../UI-shared/Button";
 import Title from "../UI-shared/Title";
 
-export default function ({ onClose }) {
+export default function ProjectList({ onClose }) {
   return (
     <div className="w-full flex  flex-col sm:px-4 px-1 ">
       <Title txt="Live Projects">

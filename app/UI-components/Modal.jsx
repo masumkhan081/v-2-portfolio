@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 
 import Logo from "../icons/read.svg";
+import Image from "next/image";
 
 export default function Modal({ visible, click }) {
   //
@@ -16,6 +17,7 @@ export default function Modal({ visible, click }) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const toggleDropdown = () => {
@@ -34,7 +36,7 @@ export default function Modal({ visible, click }) {
       <div className=" ">i am modal body ..</div>
 
       <div className="App">
-        <img src={ReactLogo} alt="React Logo" />
+        <Image src={ReactLogo} alt="alt txt" />
       </div>
       <div className=" ">i am modal body ..</div>
       <div className=" ">i am modal body ..</div>

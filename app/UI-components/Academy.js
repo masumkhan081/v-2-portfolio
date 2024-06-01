@@ -1,7 +1,8 @@
 import React from "react";
-import { FaGraduationCap,FaUniversity } from "react-icons/fa";
+import { FaGraduationCap, FaUniversity } from "react-icons/fa";
 
 import ListItem from "../UI-shared/ListItem";
+import AboutTitle from "../UI-shared/AboutTitle";
 
 export default function Academy() {
   const educations = [
@@ -23,16 +24,19 @@ export default function Academy() {
   ];
   return (
     <>
-      {educations.map((eduItem, ind) => {
-        return (
-          <ListItem
-            key={ind}
-            boldText={eduItem.title}
-            plainText={eduItem.desc}
-            icon={eduItem.icon}
-          />
-        );
-      })}
+      <AboutTitle title="Academy" />
+      <ul className="ps-2">
+        {educations.map((eduItem, ind) => {
+          return (
+            <ListItem
+              key={ind}
+              boldText={eduItem.title}
+              plainText={eduItem.desc}
+              icon={eduItem.icon}
+            />
+          );
+        })}
+      </ul>
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function AboutTitle({ title, children }) {
       // style={{
       //   ...springs,
       // }}
-      className="block md:w-1/2 sm:w-2/3 w-full bg-teal-600 bg-gradient-to-r from-teal-900 text-orange-300 text-center font-mono rounded-s-md rounded-e-lg "
+      className="block md:w-1/2 sm:w-2/3 w-full  bg-gradient-to-r from-dark-green text-dark-brown text-center font-mono rounded-s-md rounded-e-lg "
     >
       {title}
       {children}

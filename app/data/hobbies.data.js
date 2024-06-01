@@ -7,4 +7,4 @@ import Travel2 from "../../public/icons/travel-2.png";
 
 
 
-export const hobbies = [Fishing, Reading, Travel2, Game, Cricket];
+export const hobbies = [{name:"Fishing",icon:Fishing}, {name:"Reading",icon:Reading}, {name:"Traveling",icon:Travel2}, {name:"Gaming",icon:Game}, {name:"Cricket",icon:Cricket}];
