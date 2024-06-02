@@ -16,13 +16,13 @@ export default function Hobbies() {
           {toolTip}
         </span>
       </div>
-      <div className="flex sm:gap-5 gap-3 flex-wrap ps-2 py-3 ">
+      <div className="flex sm:gap-5 gap-3 flex-wrap ps-2 py-3 items-end">
         {hobbies.map((hobby, ind) => {
           return (
             <Image
               key={ind}
               src={hobby.icon}
-              className="icn_socials"
+              className={hobby.style}
               alt="alt txt"
               onMouseOver={() => {
                 setToolTip(hobby.name);

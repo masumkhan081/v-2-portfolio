@@ -24,7 +24,7 @@ export default function Academy() {
   ];
   return (
     <>
-      <AboutTitle title="Academy" />
+      <div className="w-1/2"><AboutTitle title="Academy" /></div>
       <ul className="ps-2">
         {educations.map((eduItem, ind) => {
           return (

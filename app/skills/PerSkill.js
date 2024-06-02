@@ -3,7 +3,7 @@ import { FaClipboardList } from "react-icons/fa";
  
 //
 
-export default function FrontEnd() {
+export default function PersonalSkill() {
   return (
     <div className="per_skills bg-gradient-to-t from-teal-600 rounded-md bg-opacity-75 shadow md:w-1/3 sm:w-1/2 w-screen p-3 bg-teal-800">
       <span className="block text-base font-bold bg-teal-900 text-green-200 text-center rounded-sm">

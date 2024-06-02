@@ -12,7 +12,7 @@ export default function Frameworks() {
       <ul className="my-3  space-y-2 text-green-700 ">
 
         <li className="mb-1">
-          Nextjs
+          <span className="bg-white dark:bg-gray-900">Nextjs</span>
         </li>
         <li className="mb-2 ">semi
           Tailwind CSS

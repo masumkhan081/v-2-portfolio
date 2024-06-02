@@ -12,7 +12,7 @@ export default function FindMe() {
   const [toolTip, setToolTip] = useState("");
 
   return (
-    <div>
+    <div className="bg-acquamarine ">
       <div className="flex gap-2 ">
         <AboutTitle title={"Find Me"} />
         <span className="font-rubik text-sm font-bold text-dark-brown">

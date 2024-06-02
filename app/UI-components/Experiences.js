@@ -9,7 +9,7 @@ export default function Experiences() {
 
   return (
     <>
-      <AboutTitle title="Experiences" />
+      <div className="w-1/2"><AboutTitle title="Experiences" /></div>
       <ul className="ps-2">
         {experiences.map((workExperience, ind) => {
           return (

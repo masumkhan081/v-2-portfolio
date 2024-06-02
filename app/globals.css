@@ -7,6 +7,24 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+::-webkit-scrollbar {
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background: #ffffff;
+}
+::-webkit-scrollbar-button {
+  background: #ffffff;
+  height: 0px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #470303;
+  height: 20px;
+  border-radius: 10px;
+}
 
 .nav_drop_down {
   @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
@@ -17,11 +35,11 @@
 }
 
 .icn_socials {
-  @apply inline  w-8 h-8 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1 ;
+  @apply inline  w-8 h-8 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1;
 }
 
-.icn_socials_w8 {
-  @apply inline  w-8 h-8 text-teal-800 bg-slate-300  border-teal-800 border-b rounded-full;
+.icn_socials_sm {
+  @apply inline  w-7 h-7 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1;
 }
 
 .icn_nav {
@@ -29,9 +47,9 @@
 }
 
 .nav_link {
-  @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800 ;
+  @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800;
 }
 
-.brdr{
-  @apply border-2 border-red-500
+. {
+  @apply border-2 border-red-500;
 }

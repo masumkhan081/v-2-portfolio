@@ -17,9 +17,12 @@ export default function page() {
         className=" w-full h-auto flex flex-wrap gap-x-2 justify-around gap-y-5 mb-3"
       >
         <Frameworks />
-        <Frameworks />
-        <Frameworks />
-        <Frameworks />
+        <FrontEnd />
+        <BackEnd />
+        <DBSkill />
+        <PerSkill />
+        <ProgSkill />
+
 
         {/* <FrontEnd />
         <BackEnd />
