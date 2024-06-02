@@ -17,7 +17,7 @@
 }
 
 .icn_socials {
-  @apply inline  w-8 h-8 text-teal-800 bg-slate-300  border-teal-800 border-b-2 p-1 ;
+  @apply inline  w-8 h-8 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1 ;
 }
 
 .icn_socials_w8 {
@@ -29,5 +29,9 @@
 }
 
 .nav_link {
-  @apply flex gap-1 justify-center items-center bg-emerald-800 text-center px-2 font-sans text-sm sm:w-fit w-full text-orange-300 hover:text-teal-400 ;
+  @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800 ;
+}
+
+.brdr{
+  @apply border-2 border-red-500
 }

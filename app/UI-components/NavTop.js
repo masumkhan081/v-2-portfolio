@@ -21,9 +21,9 @@ export default function Nav() {
 
   return (
     <div
-    
-    style={{ position: "-webkit-sticky", position: "sticky", top: 0 , zIndex:"10" }}
-     className=" bg-dark-green text-pr/600 font-averia font-semibold w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-2.0 py-3 text-1/1  ">
+
+      style={{ position: "-webkit-sticky", position: "sticky", top: 0, zIndex: "10" }}
+      className=" bg-acquamarine rounded-md text-pr/600 font-averia font-semibold w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-2.0 py-3 text-1/1  ">
       <div className={styLogic()}>
         {navLinks.map((link, key) => {
           return (

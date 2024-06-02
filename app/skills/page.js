@@ -7,28 +7,25 @@ import FrontEnd from "./FrontEnd";
 import PerSkill from "./PerSkill";
 import ProgSkill from "./ProgSkill";
 import DBSkill from "./DBSkill";
-
+import Frameworks from "./Framework";
 //
 export default function page() {
-  //
-  // const springs = useSpring({
-  //   from: { x: 100, y: 100 },
-  //   to: { x: 0, y: 0 },
-  // });
-  //
+
   return (
-    <div className="h-full pb-5">
+    <div className="flex-grow h-full p-5 bg-acquamarine">
       <div
-        className="  w-full h-auto mt-4 px-5 flex flex-wrap  justify-around gap-y-5 mb-3"
-        // style={{
-        //   ...springs,
-        // }}
+        className=" w-full h-auto flex flex-wrap gap-x-2 justify-around gap-y-5 mb-3"
       >
-        <FrontEnd />
+        <Frameworks />
+        <Frameworks />
+        <Frameworks />
+        <Frameworks />
+
+        {/* <FrontEnd />
         <BackEnd />
         <DBSkill />
         <ProgSkill />
-        <PerSkill />
+        <PerSkill /> */}
       </div>
     </div>
   );

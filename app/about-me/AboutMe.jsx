@@ -27,7 +27,7 @@ export default function AboutMe() {
   return (
     <div
       onScroll={() => setTest(JSON.stringify(isInViewport("footerid")))}
-      className="h-[600px] overflow-y-scroll px-1.5 pt-1.0 pb-2.0  grid md:grid-cols-2 grid-cols-1 gap-4 bg-slate-300 border border-teal-700 rounded"
+      className="flex-grow px-1.5 pt-1.0 pb-2.0  grid md:grid-cols-2 grid-cols-1 gap-4 bg-acquamarine rounded"
     >
       <div className="col-span-1 flex flex-col gap-2 justify-start ">
         <Personal />
