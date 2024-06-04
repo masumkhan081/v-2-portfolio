@@ -50,6 +50,6 @@
   @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800;
 }
 
-. {
+.brdr {
   @apply border-2 border-red-500;
 }

@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-export default function NavLink({ key, href, txt, icon, active, download }) {
+export default function NavLink({ href, txt, icon, active, download }) {
   return (
     <a
-      key={key}
       href={href}
       download={download}
       className={
