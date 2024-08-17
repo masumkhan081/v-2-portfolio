@@ -7,19 +7,49 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+::-webkit-scrollbar {
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background: #ffffff;
+}
+::-webkit-scrollbar-button {
+  background: #ffffff;
+  height: 0px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #470303;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.nav_drop_down {
+  @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
+}
 
 .btn_nav {
-  @apply bg-teal-900 text-orange-200 text-center  px-2 py-1 rounded-md  text-sm font-averia tracking-02;
+  @apply bg-orange-800 text-wh text-center  px-3 py-1 rounded-md  text-sm font-averia;
 }
 
 .icn_socials {
-  @apply inline mx-1 w-2.5 h-2.5 text-teal-800 bg-slate-300  border-teal-800 border p-1 rounded-full;
+  @apply inline  w-8 h-8 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1;
+}
+
+.icn_socials_sm {
+  @apply inline  w-7 h-7 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1;
 }
 
 .icn_nav {
-  @apply inline mx-2 w-5 h-5 my-0.125;
+  @apply inline mx-1 w-4 h-4 my-1;
 }
 
 .nav_link {
-  @apply flex justify-between items-center bg-teal-900 text-center pr-2 rounded-md  font-averia tracking-tight sm:text-base text-sm sm:w-fit w-full text-orange-200  transition ease-in-out delay-100 hover:text-teal-200 hover:-translate-y-[4px] hover:scale-110 hover:rounded-xl hover:bg-teal-600 duration-200;
+  @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800;
+}
+
+.brdr {
+  @apply border-2 border-red-500;
 }

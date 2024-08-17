@@ -1,4 +1,4 @@
-import Nav2 from "./Nav2";
+import NavTop from "./UI-components/NavTop";
 import "./globals.css";
 
 export const metadata = {
@@ -8,9 +8,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="flex flex-col bg-teal-700 w-full min-h-screen">
-        <Nav2 />
+    <html lang="en" className="dark">
+      <body className="flex flex-col bg-slate-200 bg-opacity-40 w-full min-h-screen">
+        <NavTop />
         {children}
       </body>
     </html>
