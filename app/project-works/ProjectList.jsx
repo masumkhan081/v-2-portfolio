@@ -1,5 +1,5 @@
-import React from "react"; 
-import {AiOutlineClose} from 'react-icons/ai'
+import React from "react";
+import { AiOutlineClose } from "react-icons/ai";
 import Button from "../UI-shared/Button";
 import Title from "../UI-shared/Title";
 

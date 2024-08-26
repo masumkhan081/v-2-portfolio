@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import MK from "../../public/images/mk_avatar.png";
+import MK from "../../public/images/mk-2.png";
 import Phone from "../../public/icons/Phone";
 import Email from "../../public/icons/Email";
 // import { animated, useSpring } from "@react-spring/web";
@@ -23,7 +23,6 @@ import Personal from "../UI-components/Personal";
 import Experiences from "../UI-components/Experiences";
 
 export default function AboutMe() {
-
   return (
     <div
       onScroll={() => setTest(JSON.stringify(isInViewport("footerid")))}
@@ -41,7 +40,6 @@ export default function AboutMe() {
         <Hobbies />
         <HireMe />
       </div>
-
     </div>
   );
 }

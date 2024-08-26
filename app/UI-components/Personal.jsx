@@ -4,7 +4,7 @@ import { ImLocation2 } from "react-icons/im";
 import { BsFillPersonFill } from "react-icons/bs";
 import ListItem from "../UI-shared/ListItem";
 import Image from "next/image";
-import MasumK from "../../public/images/mk-nobg.png";
+import MasumK from "../../public/images/masumkhan.jpg";
 
 export default function Personal() {
   const persInfo = [
