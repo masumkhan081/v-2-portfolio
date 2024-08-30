@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { hobbies } from "../data/hobbies.data";
-import AboutTitle from "../UI-shared/AboutTitle";
+import { hobbies } from "../../data/hobbies.data";
+import AboutTitle from "../common/AboutTitle";
 
 export default function Hobbies() {
   //

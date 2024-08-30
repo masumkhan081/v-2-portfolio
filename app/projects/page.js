@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import Project from "./project";
+import Project from "../components/projects/project";
 // import { animated, useSpring } from "@react-spring/web";
 import data from "../data/projects.data";
 //

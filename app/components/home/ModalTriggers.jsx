@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Button from "../UI-shared/Button";
+import Button from "../common/Button";
 import Modal from "./Modal";
-import CustomSelect from "../UI-shared/CustomSelect";
+import CustomSelect from "../common/CustomSelect";
 
 export default function ModalTriggers() {
   const [modal, setModal] = useState(false);

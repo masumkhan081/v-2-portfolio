@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from "../UI-shared/Button";
-import Title from "../UI-shared/Title";
+import Button from "../common/Button";
+import Title from "../common/Title";
 
 export default function ProjectList({ onClose }) {
   return (

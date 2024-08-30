@@ -5,9 +5,9 @@ import { useRouter, usePathname } from "next/navigation";
 // image and icons
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-import Button from "../UI-shared/Button";
-import NavLink from "../UI-shared/NavLink";
-import navLinks from "../data/top-nav.data";
+import Button from "../common/Button";
+import NavLink from "../common/NavLink";
+import navLinks from "../../data/top-nav.data";
 //
 export default function Nav() {
   const [menuFolded, setMenuFolded] = useState(true);

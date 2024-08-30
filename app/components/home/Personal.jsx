@@ -2,9 +2,9 @@ import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { ImLocation2 } from "react-icons/im";
 import { BsFillPersonFill } from "react-icons/bs";
-import ListItem from "../UI-shared/ListItem";
+import ListItem from "../common/ListItem";
 import Image from "next/image";
-import MasumK from "../../public/images/masumkhan.jpg";
+import MasumK from "../../../public/images/masumkhan.jpg";
 
 export default function Personal() {
   const persInfo = [

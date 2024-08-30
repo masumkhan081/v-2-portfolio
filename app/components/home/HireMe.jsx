@@ -1,15 +1,11 @@
 import React from "react";
-import ListItem from "../UI-shared/ListItem";
-import AboutTitle from "../UI-shared/AboutTitle";
+import ListItem from "../common/ListItem";
+import AboutTitle from "../common/AboutTitle";
 import Image from "next/image";
-import Hireme from "../../public/images/hireme.png";
+import Hireme from "../../../public/images/hireme.png";
+import positions from "../../data/positions.data";
 
 export default function HireMe() {
-  const positions = [
-    "Full Stack Developer (MERN/Next)",
-    "Back-end Developer",
-    "Front-end Developer (Next/React)",
-  ];
   return (
     <div className=" rounded-md ">
       <AboutTitle title="Looking For">

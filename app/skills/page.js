@@ -2,14 +2,14 @@
 import React from "react";
 // import { animated, useSpring } from "@react-spring/web";
 
-import BackEnd from "./BackEnd";
-import FrontEnd from "./FrontEnd";
-import PerSkill from "./PerSkill";
-import ProgSkill from "./ProgSkill";
-import DBSkill from "./DBSkill";
-import Frameworks from "./Framework";
-import Languages from "./Languages";
-import DevProces from "./DevProcess";
+import BackEnd from "../components/skills/BackEnd";
+import FrontEnd from "../components/skills/FrontEnd";
+import PerSkill from "../components/skills/PerSkill";
+import ProgSkill from "../components/skills/ProgSkill";
+import DBSkill from "../components/skills/DBSkill";
+import Frameworks from "../components/skills/Framework";
+import Languages from "../components/skills/Languages";
+import DevProces from "../components/skills/DevProcess";
 import AlgorithmCard from "@/algoCardGPT";
 //
 export default function page() {

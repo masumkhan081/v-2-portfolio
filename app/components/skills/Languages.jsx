@@ -3,9 +3,9 @@ import React from "react";
 
 import { FaClipboardList } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
-import LanguageUnit from "../UI-shared/LanguageUnit";
-import { languages } from '../data/skill.data'
-import SKillTitle from "../UI-shared/SkillTitle";
+import LanguageUnit from "../common/LanguageUnit";
+import { languages } from '../../data/skill.data'
+import SKillTitle from "../common/SkillTitle";
 //
 export default function Languages() {
 

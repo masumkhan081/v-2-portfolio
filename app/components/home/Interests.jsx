@@ -1,7 +1,7 @@
 import React from "react";
-import ListItem from "../UI-shared/ListItem";
-import { interests } from "../data/interests.data";
-import AboutTitle from "../UI-shared/AboutTitle";
+import ListItem from "../common/ListItem";
+import { interests } from "../../data/interests.data";
+import AboutTitle from "../common/AboutTitle";
 
 export default function Interests() {
   return (

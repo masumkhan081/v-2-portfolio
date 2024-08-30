@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 //  icon & images
-import { profileLinks } from "../data/social.data";
+import { profileLinks } from "../../data/social.data";
 
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import AboutTitle from "../UI-shared/AboutTitle";
-import ListItem from "../UI-shared/ListItem";
+import AboutTitle from "../common/AboutTitle";
+import ListItem from "../common/ListItem";
 
 export default function FindMe() {
   //

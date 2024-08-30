@@ -1,8 +1,8 @@
 import React from "react";
 import { FaGraduationCap, FaUniversity } from "react-icons/fa";
 
-import ListItem from "../UI-shared/ListItem";
-import AboutTitle from "../UI-shared/AboutTitle";
+import ListItem from "../common/ListItem";
+import AboutTitle from "../common/AboutTitle";
 
 export default function Academy() {
   const educations = [

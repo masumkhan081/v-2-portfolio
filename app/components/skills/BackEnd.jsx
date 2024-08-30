@@ -1,14 +1,12 @@
 import React from "react";
 
 import { FaClipboardList } from "react-icons/fa";
-import AboutTitle from "../UI-shared/AboutTitle";
+import AboutTitle from "../common/AboutTitle";
 //
-export default function Frameworks() {
+export default function BackEnd() {
   return (
-<>    
-
-  <span className=" bg-slate-200 shadow-inner text-dark-brown flex justify-center items-center py-1 gap-2 text-1/1 font-averia font-semibold  rounded-sm">
-        <FaClipboardList clsnames="me-1 inline w-6 h-6" /> <span>Frameworks</span>
+    <>   <span className=" bg-slate-200 shadow-inner text-dark-brown flex justify-center items-center py-1 gap-2 text-1/1 font-averia font-semibold  rounded-sm">
+        <FaClipboardList clsnames="me-1 inline w-6 h-6" /> <span>Back End</span>
       </span>
 
       <ul className="  space-y-1  my-3 text-sm ">
@@ -33,6 +31,7 @@ export default function Frameworks() {
         </li>
 
       </ul>
-    </>
+
+    </ >
   );
 }

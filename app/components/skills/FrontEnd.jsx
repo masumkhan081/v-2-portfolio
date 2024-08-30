@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FaClipboardList } from "react-icons/fa";
-import AboutTitle from "../UI-shared/AboutTitle";
+import AboutTitle from "../common/AboutTitle";
 //
 export default function FrontEnd() {
   return (
