@@ -3,7 +3,7 @@ import ListItem from "../common/ListItem";
 import AboutTitle from "../common/AboutTitle";
 import Image from "next/image";
 import Hireme from "../../../public/images/hireme.png";
-import positions from "../../data/positions.data";
+import positions from "../../data/home/positions.data";
 
 export default function HireMe() {
   return (

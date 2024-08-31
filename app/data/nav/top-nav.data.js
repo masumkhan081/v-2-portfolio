@@ -28,14 +28,14 @@ const navLinks = [
     href: "/",
   },
   {
-    text: "Live Projects",
-    icon: <FaLink className="icn_nav" />,
-    href: "/projects",
-  },
-  {
     text: "Skills",
     icon: <FaCode className="icn_nav" />,
     href: "/skills",
+  },
+  {
+    text: "Projects",
+    icon: <FaLink className="icn_nav" />,
+    href: "/projects",
   },
   {
     text: "Resume",

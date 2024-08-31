@@ -3,6 +3,7 @@ import React from "react";
 export default function YT2({ clsnames }) {
   return (
     <svg
+      
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
       className={clsnames}

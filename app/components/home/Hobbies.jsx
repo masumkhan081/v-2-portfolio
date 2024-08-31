@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { hobbies } from "../../data/hobbies.data";
+import { hobbies } from "../../data/home/hobbies.data";
 import AboutTitle from "../common/AboutTitle";
 
 export default function Hobbies() {

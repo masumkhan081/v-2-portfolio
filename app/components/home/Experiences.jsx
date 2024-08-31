@@ -2,7 +2,7 @@ import React from "react";
 import { FaGraduationCap, FaUniversity } from "react-icons/fa";
 import ListItem from "../common/ListItem";
 import AboutTitle from "../common/AboutTitle";
-import { experiences } from "../../data/experience.data";
+import { experiences } from "../../data/home/experience.data";
 
 export default function Experiences() {
   //

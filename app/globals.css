@@ -50,6 +50,14 @@
   @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800;
 }
 
+.styleTechnoSkill {
+  @apply md:w-[250px] sm:w-[200px] w-full h-fit bg-acquamarine text-dark-brown bg-gradient-to-b from-slate-300 rounded-md bg-opacity-30  p-3;
+}
+
 .brdr {
   @apply border-2 border-red-500;
+}
+
+.brdrr {
+  @apply border-2 border-blue-500;
 }

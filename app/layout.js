@@ -1,4 +1,4 @@
-import NavTop from "./components/home/NavTop";
+import NavTop from "./components/nav/NavTop";
 import "./globals.css";
 
 export const metadata = {
