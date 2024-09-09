@@ -11,8 +11,8 @@ export default function PersonalSkill({ list }) {
         Personal Skills
       </span>
       <div className="grid grid-cols-3 gap-3 brdr justify-center">
-        {list.map((itm) => {
-          return <span>{itm}</span>;
+        {list.map((itm, ind) => {
+          return <span key={ind}>{itm}</span>;
         })}
       </div>
     </div>
