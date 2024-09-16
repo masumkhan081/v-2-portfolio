@@ -6,7 +6,7 @@ import { HiExternalLink } from "react-icons/hi";
 //
 export default function PersonalSkill({ list }) {
   return (
-    <div className="">
+    <div className="my-6">
       <span className=" block py-2 font-semibold font-titan w-full text-center">
         Personal Skills
       </span>
