@@ -22,8 +22,9 @@ export default function page() {
   return (
     <div
       // style={{ ...springs }}
-      className="brdr w-full h-auto sm:py-[50px] md:py-[65px] sm:px-5 flex flex-wrap bg-acquamarine justify-around gap-y-[45px]"
+      className=" w-full h-auto sm:py-[50px] md:py-[65px] py-[45px] sm:px-5 flex  md:flex-row flex-col flex-wrap bg-acquamarine justify-around gap-y-[45px]"
     >
+     
       {data.map((project, i) => (
         <Project
           key={i}

@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function ProjectTitle({name}) {
+export default function ProjectTitle({ name }) {
   return (
-            <h4 className=" text-center font-sans rounded-lg font-bold text-lg text-yellow-100 bg-teal-900 shadow-lg shadow-teal-600 px-2 w-fit mx-auto">
-            <hr className="w-10  h-3 border-t-2 border-teal-600 rounded-lg  mx-auto shadow-lg shadow-teal-500" />{" "}
-            {name}
-          </h4>
-  )
+    <h4 className="absolute top-[-10px] text-center font-rubik font-bold text-md text-teal-800 px-3 w-fit mx-auto bg-acquamarine shadow-inner shadow-slate-400 rounded-md">
+      <hr className="w-auto h-2 mx-4  bg-teal-300 rounded-full   shadow-inner shadow-slate-400" /> {name}
+    </h4>
+  );
 }
