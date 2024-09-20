@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 // import { animated, useSpring } from "@react-spring/web";
 import { IoIosArrowDown } from "react-icons/io";
 import {
@@ -20,6 +22,7 @@ import {
 import TechnoSkill from "../components/skills/TechnoSkill";
 import DevSkill from "../components/skills/DevSkill";
 import PersonalSkill from "../components/skills/PerSkill";
+import EnhancedTitle from "../components/common/EnhancedTitle";
 //
 
 const algo_list = {
@@ -51,8 +54,8 @@ export default function page() {
 
   const tabSty = (btnText) =>
     currentView === btnText
-      ? "shadow-md shadow-slate-200 px-2 py-1 rounded-md"
-      : "  shadow-sm px-2 py-1 rounded-md";
+      ? "shadow-inner shadow-teal-400 px-2 py-1 rounded-md"
+      : "shadow-inner shadow-teal-200 px-2 py-1 rounded-md";
 
   const subViewSty = (item) => (item === currentSubView ? "block  " : "hidden");
 
@@ -63,16 +66,23 @@ export default function page() {
     item === currentSubView ? setCurrentSubView("") : setCurrentSubView(item);
 
   return (
-    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto  bg-acquamarine">
+    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto sm:p-[90px] p-[20px]  bg-acquamarine">
       {/*                      
             Programming & Algorithms              
                                          */}
-      <div className=" brdr px-3.0  sm:py-1.0 py-1.0 flex- flex-col border-r-amber-300 h-auto">
-        <span className=" block py-1 font-semibold font-titan w-full text-center  ">
-          Programming & Algorithms {currentSubView}
-        </span>
+      <motion.div
+        // initial={{ opacity: 0, scale: 0.5 }}
+        // animate={{ opacity: 1, scale: 1 }}
+        // transition={{ duration: 0.5 }}
+        // whileHover={{ scale: 1.05 }}
+        className="  px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
+      >
+        <div className="relative flex flex-col items-center justify-center">
+          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
+          <EnhancedTitle name={`Programming & Algorithms ${currentSubView}`} />
+        </div>
 
-        <div className="w-auto bg-gradient-to-tl from-white rounded-sm px-2 py-1 flex gap-2 sm:flex-row flex-col justify-center my-6 ">
+        <div className="w-auto mx-auto text-sm font-inter font-light rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
           {Object.keys(algo_list).map((tab, ind) => {
             return (
               <button
@@ -117,7 +127,7 @@ export default function page() {
             );
           })}
         </div>
-      </div>
+      </motion.div>
       {/*                 
       
                   Personal Skills                   
@@ -126,22 +136,23 @@ export default function page() {
 
       {/* <AlgorithmCard /> */}
 
-      <div className=" brdr px-3.0  sm:py-2.0 py-1.0 flex- flex-col gap-4   h-auto">
-        <span className=" block py-2 font-semibold font-titan w-full text-center">
-          Development Skills
-        </span>
-        <div className="grid grid-cols-3 gap-3   justify-center">
+      <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
+        <div className="relative flex flex-col items-center justify-center">
+          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
+          <EnhancedTitle name="Development Skills" />
+        </div>
+        <div className="grid grid-cols-3 gap-3 justify-center">
           <DevSkill title={"fornt-end skill"} list={fronendSKills} />
           <DevSkill title={"back-end skill"} list={backendSKills} />
           <DevSkill title={"others"} list={otherSkills} />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="px-3.0  sm:py-2.0 py-1.0 flex- flex-col gap-4  ">
-        <span className=" block py-4 font-semibold font-titan w-full text-center">
-          Technological Skills
-        </span>
-
+      <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
+        <div className="relative flex flex-col items-center justify-center">
+          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
+          <EnhancedTitle name="Technological Skills" />
+        </div>
         <div className=" flex flex-wrap gap-x-2 justify-around sm:gap-y-5 gap-y-2 ">
           <div className="styleTechnoSkill">
             <TechnoSkill title={"Languages"} list={languages} />
@@ -165,11 +176,15 @@ export default function page() {
             <TechnoSkill title={"Dev Process"} list={devProcessTechs} />
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className=" flex flex-wrap gap-x-2 justify-around sm:gap-y-5 gap-y-2 ">
+      <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
+        <div className="relative flex flex-col items-center justify-center">
+          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
+          <EnhancedTitle name="Personal Skills" />
+        </div>
         <PersonalSkill list={personalSkills} />{" "}
-      </div>
+      </motion.div>
     </div>
   );
 }

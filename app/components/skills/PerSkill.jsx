@@ -1,20 +1,28 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { FaClipboardList } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
-
 //
 export default function PersonalSkill({ list }) {
+  //
+  const [hoverItem, setHoverItem] = useState();
+  const getSty = (ind) =>
+    ind === hoverItem ? "opacity-90 translate-x-[-2px]" : "opacity-50";
+
   return (
-    <div className="my-6">
-      <span className=" block py-2 font-semibold font-titan w-full text-center">
-        Personal Skills
-      </span>
-      <div className="grid grid-cols-3 gap-3 brdr justify-center">
-        {list.map((itm, ind) => {
-          return <span key={ind}>{itm}</span>;
-        })}
-      </div>
-    </div>
+    <ul className="flex flex-col gap-y-2 items-center justify-center p-[40px]">
+      {list.map((itm, ind) => {
+        return (
+          <li
+            onMouseOver={() => setHoverItem(ind)}
+            onMouseOut={() => setHoverItem()}
+            className=" text-start font-inter flex flex-col "
+            key={ind}
+          >
+            <span>{itm.title}</span>
+            <span>{itm.detail}</span>
+          </li>
+        );
+      })}
+    </ul>
   );
 }

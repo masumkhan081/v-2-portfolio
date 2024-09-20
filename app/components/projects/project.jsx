@@ -4,11 +4,10 @@ import Youtube from "../../../public/icons/Youtube";
 import Github from "../../../public/icons/Github";
 import YT2 from "../../../public/icons/YT2";
 import CustomLink from "../common/CustomLink";
-import ProjectTitle from "../common/ProjectTitle";
+import EnhancedTitle from "../common/EnhancedTitle";
 import { motion   } from "framer-motion";
 
 export default function Project({ name, versions, summary }) {
-
    
 
   return (
@@ -25,7 +24,7 @@ export default function Project({ name, versions, summary }) {
    
       <div className="relative flex flex-col items-center justify-center">
         <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
-        <ProjectTitle name={name} />
+        <EnhancedTitle name={name} />
       </div>
 
       <div className="mt-[40px] mb-4">
