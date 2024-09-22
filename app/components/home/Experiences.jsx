@@ -10,7 +10,7 @@ export default function Experiences() {
   return (
     <>
       <div className="w-1/2"><AboutTitle title="Experiences" /></div>
-      <ul className="ps-2">
+      <ul className="ps-2 flex flex-col justify-center sm:items-start items-center">
         {experiences.map((workExperience, ind) => {
           return (
             <li key={ind} className="flex gap-2 text-0.75/1.25">

@@ -1,22 +1,18 @@
 import React from "react";
-// import { animated, useSpring } from "@react-spring/web";
+import { motion } from "framer-motion";
 
 export default function AboutTitle({ title, children }) {
-  // const springs = useSpring({
-  //   from: {
-  //     y: 0,
-  //     width: "100%",
-  //     opacity: "0.5",        
-  //     textShadow: "2px 2px 4px #000000",
-  //   },
-  //   to: { y: 0, width: "75%", opacity: "1" },
-  // });
   return (
     <span
-      // style={{
-      //   ...springs,
-      // }}
-      className="block w-full  bg-gradient-to-r from-dark-green text-dark-brown text-center font-mono rounded-s-md rounded-e-lg "
+      animate={{
+        x: 0,
+        backgroundColor: "#000",
+        boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
+        transitionEnd: {
+          display: "none",
+        },
+      }}
+      className="block w-full font-inter font-bold bg-gradient-to-r from-teal-200 bg-transparent text-teal-900 text-center   rounded-s-md rounded-e-lg "
     >
       {title}
       {children}

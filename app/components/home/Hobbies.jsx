@@ -11,7 +11,7 @@ export default function Hobbies() {
     <div>
       <div className="flex gap-2 ">
         <AboutTitle title={"Hobbies"} />
-        <span className="font-rubik text-sm font-bold text-dark-brown">
+        <span className="font-inter text-sm font-light text-yellow-700">
           {" "}
           {toolTip}
         </span>
