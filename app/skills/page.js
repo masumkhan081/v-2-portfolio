@@ -42,7 +42,7 @@ const algo_list = {
 };
 
 //
-export default function page() {
+export default function Page() {
   const [currentView, setCurrentView] = useState(Object.keys(algo_list)[0]);
   const [currentSubView, setCurrentSubView] = useState(
     Object.keys(algo_list[currentView])[0]
