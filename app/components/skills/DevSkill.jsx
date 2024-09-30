@@ -5,7 +5,8 @@ import { FaSlackHash } from "react-icons/fa";
 export default function DevSkill({ title, list }) {
   const [hoverItem, setHoverItem] = useState();
 
-  const getSty = (ind) => (ind === hoverItem ? "opacity-90 translate-x-[-2px]" : "opacity-50");
+  const getSty = (ind) =>
+    ind === hoverItem ? "opacity-90 translate-x-[-2px] h-3 w-3 text-teal-700" : "opacity-50";
 
   return (
     <motion.div className="sm:col-span-1 col-span-3 p-3 ">
@@ -19,12 +20,12 @@ export default function DevSkill({ title, list }) {
             <li
               onMouseOver={() => setHoverItem(ind)}
               onMouseOut={() => setHoverItem()}
-              className="flex items-center justify-center gap-2 py-1 border-b border-yellow-700 hover:flex-row-reverse hover:items-start drop-shadow rounded-r"
+              className="flex items-center justify-center gap-2 my-1 px-2 border-b border-teal-400 hover:flex-row-reverse hover:items-start drop-shadow rounded"
               key={itm}
             >
               <FaSlackHash className={getSty(ind)} />
 
-             <span className="flex-grow text-start"> {itm}</span>
+              <span className="flex-grow text-start"> {itm}</span>
             </li>
           );
         })}

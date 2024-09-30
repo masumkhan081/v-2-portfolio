@@ -24,32 +24,17 @@ import DevSkill from "../components/skills/DevSkill";
 import PersonalSkill from "../components/skills/PerSkill";
 import EnhancedTitle from "../components/common/EnhancedTitle";
 //
-
-const algo_list = {
-  "Classical Algo": {
-    number_theory: ["nt-1", "nt-2"],
-    "dynamic theory": ["dt-1 Algo", "coin change", "dt-5 Algo", "d9 -00 ##"],
-  },
-
-  "Machine Learning": {
-    classification: ["ml Algo", "ml-2 "],
-    "regression theory": ["Classical Algo", "coin change"],
-  },
-  Profiles: {
-    numbertheory: ["Classical Algo", "Classical Algo -2"],
-    "dynamic theory": ["Classical Algo", "coin change"],
-  },
-};
+import algoList from "../data/skills/algorithms.data";
 
 //
 export default function Page() {
-  const [currentView, setCurrentView] = useState(Object.keys(algo_list)[0]);
+  const [currentView, setCurrentView] = useState(Object.keys(algoList)[0]);
   const [currentSubView, setCurrentSubView] = useState(
-    Object.keys(algo_list[currentView])[0]
+    Object.keys(algoList[currentView])[0]
   );
 
   useEffect(() => {
-    setCurrentSubView(Object.keys(algo_list[currentView])[0]);
+    setCurrentSubView(Object.keys(algoList[currentView])[0]);
   }, [currentView]);
 
   const tabSty = (btnText) =>
@@ -83,7 +68,7 @@ export default function Page() {
         </div>
 
         <div className="w-auto mx-auto text-sm font-inter font-light rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
-          {Object.keys(algo_list).map((tab, ind) => {
+          {Object.keys(algoList).map((tab, ind) => {
             return (
               <button
                 key={ind}
@@ -97,7 +82,7 @@ export default function Page() {
         </div>
 
         <div className="my-6 rounded-md  ">
-          {Object.keys(algo_list[currentView]).map((item, ind) => {
+          {Object.keys(algoList[currentView]).map((item, ind) => {
             return (
               <div
                 className="rounded-md shadow-md flex flex-col gap-2 p-3"
@@ -109,13 +94,13 @@ export default function Page() {
                 >
                   {item}
                   <span className="rounded-full px-2 bg-yellow-900 text-yellow-100 text-lg">
-                    {algo_list?.[currentView]?.[item]?.length}
+                    {algoList?.[currentView]?.[item]?.length}
                   </span>
 
                   <IoIosArrowDown className={activeSty(item)} />
                 </button>
                 <ul className={`${subViewSty(item)} flex flex-col gap-1`}>
-                  {algo_list?.[currentView]?.[currentSubView]?.map((itm, i) => {
+                  {algoList?.[currentView]?.[currentSubView]?.map((itm, i) => {
                     return (
                       <li className="" key={i}>
                         {itm}
@@ -156,11 +141,7 @@ export default function Page() {
         <div className=" flex flex-wrap gap-x-2 justify-around sm:gap-y-5 gap-y-2 ">
           <div className="styleTechnoSkill">
             <TechnoSkill title={"Languages"} list={languages} />
-          </div>
-
-          <div className="styleTechnoSkill">
-            <TechnoSkill title={"Frameworks"} list={frameworks} />
-          </div>
+          </div> 
 
           <div className="styleTechnoSkill">
             <TechnoSkill title={"Fronend"} list={frontendTechs} />
